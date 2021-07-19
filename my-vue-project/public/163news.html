@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        body {
+            background-color: #bfa;
+        }
+
+         a {
+            text-decoration: none;
+            color: #404040;
+            font-size: 14px;
+        }
+
+        a:hover {
+
+            color: #ff3333;
+        }
+
+        .news {
+            height: 376px;
+            width: 200px;
+            background-color: #ffffff;
+            margin: 50px auto;
+            border-top: 1px #ddd solid;
+
+
+        }
+
+        .news-title {
+            padding-top: 10px;
+
+            height: 30px;
+            display: inline-block;
+            border-top: 1px #ff3333 solid;
+            margin-top: -1px;
+        }
+
+        .news-title  a {
+            font-weight: bold;
+        }
+
+        .news-list {
+            font-size: 14px;
+        }
+        .img-title{
+            margin-top: -30px;
+            color: #ffffff;
+            padding-left: 30px;
+        }
+        .img-title a{
+            color: #fff;
+        }
+        .news-img{
+            height: 125px;
+        }
+        .news-list{
+            margin-top: 20px;
+            padding-left: 14px;
+        }
+        .news-list li{
+            margin-bottom: 17px;
+        }
+        .news-list li::before{
+            content: '*';
+            margin-left: -14px;
+
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="news">
+    <h2 class="news-title">
+        <a href="">体育</a>
+    </h2>
+    <div class="news-img">
+        <img src="./163news/4cf6910cj00qwg3tb00itc000s600e3c.webp" alt="">
+        <h3 class="img-title">
+            <a href="">雄鹿3-2太阳</a>
+        </h3>
+    </div>
+    <ul class="news-list">
+        <li>
+            <a href="">卡斯比宣布退役:是时候离开了 我的篮球梦想已成真</a>
+        </li>
+        <li>
+            <a href="">字母哥:我们不一定能够在主场赢下G6 必须保持谦逊</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
