@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./jd-top-nav/iconfont.css">
+</head>
+<style>
+    .top-body {
+        background-color: #e3e4e5;
+        height: 30px;
+    }
+
+    .top-inner {
+        width: 990px;
+        height: 30px;
+        background-color: transparent;
+        z-index: 999;
+        margin: 0 auto;
+    }
+
+    .fl {
+        float: left;
+        height: 30px;
+        display: block;
+        line-height: 30px;
+        color: #999;
+        font-size: 12px;
+    }
+    .fl:hover .city-list{
+        display: block;
+    }
+    .city-list{
+        background-color: white;
+        width: 320px;
+        height: 436px;
+        display: none;
+        border: 1px solid rgb(204,204,204);
+        position: absolute;
+        top: 31px;
+        margin-top: -2px;
+        box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    }
+
+    .fr {
+        float: right;
+        display: block;
+
+        width: 690px;
+    }
+    .current-city{
+        padding: 0 10px;
+        position: relative;
+        z-index: 3333;
+        border: 1px solid transparent;
+
+    }
+    .fl:hover .current-city{
+        height: 30px;
+        line-height: 30px;
+        padding-bottom: 2px;
+        background-color: white;
+        border: 1px solid rgb(204,204,204);
+        border-bottom: none;
+        box-sizing: border-box;
+    }
+
+    .fr > li {
+        float: left;
+        margin-right: 10px;
+        font-size: 12px;
+        text-decoration: none;
+        color: #999;
+        line-height: 30px;
+    }
+
+    .fr > li:not(:first-child,:nth-child(2)):before {
+        content: '|';
+        color: #999;
+        width: 1px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    li > a {
+        text-decoration: none;
+        color: #999;
+    }
+
+    li > a:hover {
+        color: #e33333;
+    }
+
+    .red {
+        color: #e33333;
+    }
+
+
+    .icon-loc-s{
+        color: #e33333;
+    }
+    .icon-xiangxia{
+        color: #999;
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+</style>
+<body>
+<div class="top-body">
+    <div class="top-inner">
+        <ul class="fl "><li class="current-city"><i class="iconfont icon-loc-s "></i>长沙</li>
+        <div class="city-list"></div>
+        </ul>
+        <ul class="fr">
+            <li class="login"><a href="javascript:">您好,请登陆</a></li>
+            <li><a href="">免费注册</a></li>
+            <li><a href="javascript:">我的订单</a></li>
+            <li><a href="javascript:">我的京东</a></li>
+            <li><a href="javascript:">京东会员</a></li>
+            <li><a href="javascript:" class="red">企业采购<i class="iconfont icon-xiangxia"></i></a></li>
+            <li>客服服务<i class="iconfont icon-xiangxia"></i></li>
+            <li>网站导航<i class="iconfont icon-xiangxia"></i></li>
+            <li>手机京东</li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
